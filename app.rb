@@ -3,6 +3,7 @@ require 'sinatra/contrib'
 require 'chartkick'
 
 class MyChartApp < Sinatra::Base
+  register Sinatra::Contrib
 
   get '/' do
     @title = "Deployments per day"
